@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="messages" date="2026-03-31T00:00:00Z" product-name="dv_education_downloads">
+        <header/><body>
+            <trans-unit id="tx_dveducationdownloads_domain_model_documenttype"><source>Document Type</source></trans-unit>
+            <trans-unit id="tx_dveducationdownloads_domain_model_download"><source>Download</source></trans-unit>
+            <trans-unit id="field.title"><source>Title</source></trans-unit>
+            <trans-unit id="field.description"><source>Description</source></trans-unit>
+            <trans-unit id="field.document_type"><source>Document Type</source></trans-unit>
+            <trans-unit id="field.language"><source>Language</source></trans-unit>
+            <trans-unit id="field.version"><source>Version</source></trans-unit>
+            <trans-unit id="field.valid_from"><source>Valid from</source></trans-unit>
+            <trans-unit id="field.valid_until"><source>Valid until</source></trans-unit>
+            <trans-unit id="field.file"><source>File</source></trans-unit>
+            <trans-unit id="tab.metadata"><source>Metadata</source></trans-unit>
+        </body>
+    </file>
+</xliff>

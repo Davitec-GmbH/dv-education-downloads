@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2026-03-31T00:00:00Z" product-name="dv_education_downloads">
+        <header/><body>
+            <trans-unit id="tx_dveducationdownloads_domain_model_documenttype"><source>Document Type</source><target>Dokumenttyp</target></trans-unit>
+            <trans-unit id="tx_dveducationdownloads_domain_model_download"><source>Download</source><target>Download</target></trans-unit>
+            <trans-unit id="field.title"><source>Title</source><target>Titel</target></trans-unit>
+            <trans-unit id="field.description"><source>Description</source><target>Beschreibung</target></trans-unit>
+            <trans-unit id="field.document_type"><source>Document Type</source><target>Dokumenttyp</target></trans-unit>
+            <trans-unit id="field.language"><source>Language</source><target>Sprache</target></trans-unit>
+            <trans-unit id="field.version"><source>Version</source><target>Version</target></trans-unit>
+            <trans-unit id="field.valid_from"><source>Valid from</source><target>Gültig ab</target></trans-unit>
+            <trans-unit id="field.valid_until"><source>Valid until</source><target>Gültig bis</target></trans-unit>
+            <trans-unit id="field.file"><source>File</source><target>Datei</target></trans-unit>
+            <trans-unit id="tab.metadata"><source>Metadata</source><target>Metadaten</target></trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,6 @@
+plugin.tx_dveducationdownloads {
+    persistence {
+        # cat=plugin.tx_dveducationdownloads/storage; type=int; label=Storage PID
+        storagePid =
+    }
+}

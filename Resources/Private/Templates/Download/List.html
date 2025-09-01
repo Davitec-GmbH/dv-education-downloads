@@ -1,0 +1,58 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+<f:section name="content">
+    <h1><f:translate key="LLL:EXT:dv_education_downloads/Resources/Private/Language/locallang.xlf:download.headline" /></h1>
+
+    <section class="download-filter">
+        <f:form action="list" controller="Download" pluginName="DownloadList" method="post">
+            <fieldset>
+                <label for="dl-search"><f:translate key="LLL:EXT:dv_education_downloads/Resources/Private/Language/locallang.xlf:download.search" /></label>
+                <f:form.textfield name="searchTerm" id="dl-search" value="{searchTerm}" />
+
+                <label for="dl-type"><f:translate key="LLL:EXT:dv_education_downloads/Resources/Private/Language/locallang.xlf:download.type" /></label>
+                <f:form.select name="documentType" id="dl-type" value="{selectedType}" options="{documentTypes}" optionValueField="uid" optionLabelField="title" prependOptionLabel="{f:translate(key: 'LLL:EXT:dv_education_downloads/Resources/Private/Language/locallang.xlf:download.allTypes')}" prependOptionValue="0" />
+
+                <label for="dl-lang"><f:translate key="LLL:EXT:dv_education_downloads/Resources/Private/Language/locallang.xlf:download.language" /></label>
+                <f:form.select name="language" id="dl-lang" value="{selectedLanguage}" options="{languages}" prependOptionLabel="{f:translate(key: 'LLL:EXT:dv_education_downloads/Resources/Private/Language/locallang.xlf:download.allLanguages')}" prependOptionValue="" />
+
+                <f:form.submit value="{f:translate(key: 'LLL:EXT:dv_education_downloads/Resources/Private/Language/locallang.xlf:download.submit')}" />
+                <f:if condition="{searchTerm} || {selectedType} || {selectedLanguage}">
+                    <a href="{f:uri.page()}"><f:translate key="LLL:EXT:dv_education_downloads/Resources/Private/Language/locallang.xlf:download.reset" /></a>
+                </f:if>
+            </fieldset>
+        </f:form>
+    </section>
+
+    <f:if condition="{downloads}">
+        <f:then>
+            <table class="download-table">
+                <thead>
+                    <tr>
+                        <th><f:translate key="LLL:EXT:dv_education_downloads/Resources/Private/Language/locallang.xlf:download.col.title" /></th>
+                        <th><f:translate key="LLL:EXT:dv_education_downloads/Resources/Private/Language/locallang.xlf:download.col.type" /></th>
+                        <th><f:translate key="LLL:EXT:dv_education_downloads/Resources/Private/Language/locallang.xlf:download.col.language" /></th>
+                        <th><f:translate key="LLL:EXT:dv_education_downloads/Resources/Private/Language/locallang.xlf:download.col.version" /></th>
+                        <th><f:translate key="LLL:EXT:dv_education_downloads/Resources/Private/Language/locallang.xlf:download.col.valid" /></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <f:for each="{downloads}" as="dl">
+                        <tr>
+                            <td><strong>{dl.title}</strong><f:if condition="{dl.description}"><br /><small>{dl.description}</small></f:if></td>
+                            <td><f:if condition="{dl.documentType}">{dl.documentType.title}</f:if></td>
+                            <td>{dl.language}</td>
+                            <td>{dl.version}</td>
+                            <td><f:if condition="{dl.validFrom}"><f:format.date format="d.m.Y">{dl.validFrom}</f:format.date></f:if><f:if condition="{dl.validUntil}"> — <f:format.date format="d.m.Y">{dl.validUntil}</f:format.date></f:if></td>
+                            <td><f:if condition="{dl.file}"><a href="{f:uri.resource(path: 'fileadmin/')}" download=""><f:translate key="LLL:EXT:dv_education_downloads/Resources/Private/Language/locallang.xlf:download.download" /></a></f:if></td>
+                        </tr>
+                    </f:for>
+                </tbody>
+            </table>
+        </f:then>
+        <f:else>
+            <p><f:translate key="LLL:EXT:dv_education_downloads/Resources/Private/Language/locallang.xlf:download.noResults" /></p>
+        </f:else>
+    </f:if>
+</f:section>
+</html>

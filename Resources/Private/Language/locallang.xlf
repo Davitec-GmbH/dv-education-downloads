@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="messages" date="2026-03-31T00:00:00Z" product-name="dv_education_downloads">
+        <header/><body>
+            <trans-unit id="plugin.downloadlist.title"><source>Download Center</source></trans-unit>
+            <trans-unit id="download.headline"><source>Downloads</source></trans-unit>
+            <trans-unit id="download.search"><source>Search</source></trans-unit>
+            <trans-unit id="download.type"><source>Document Type</source></trans-unit>
+            <trans-unit id="download.allTypes"><source>All types</source></trans-unit>
+            <trans-unit id="download.language"><source>Language</source></trans-unit>
+            <trans-unit id="download.allLanguages"><source>All languages</source></trans-unit>
+            <trans-unit id="download.submit"><source>Filter</source></trans-unit>
+            <trans-unit id="download.reset"><source>Reset</source></trans-unit>
+            <trans-unit id="download.noResults"><source>No downloads found.</source></trans-unit>
+            <trans-unit id="download.download"><source>Download</source></trans-unit>
+            <trans-unit id="download.col.title"><source>Title</source></trans-unit>
+            <trans-unit id="download.col.type"><source>Type</source></trans-unit>
+            <trans-unit id="download.col.language"><source>Language</source></trans-unit>
+            <trans-unit id="download.col.version"><source>Version</source></trans-unit>
+            <trans-unit id="download.col.valid"><source>Validity</source></trans-unit>
+        </body>
+    </file>
+</xliff>

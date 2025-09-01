@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2026-03-31T00:00:00Z" product-name="dv_education_downloads">
+        <header/><body>
+            <trans-unit id="plugin.downloadlist.title"><source>Download Center</source><target>Download-Center</target></trans-unit>
+            <trans-unit id="download.headline"><source>Downloads</source><target>Downloads</target></trans-unit>
+            <trans-unit id="download.search"><source>Search</source><target>Suche</target></trans-unit>
+            <trans-unit id="download.type"><source>Document Type</source><target>Dokumenttyp</target></trans-unit>
+            <trans-unit id="download.allTypes"><source>All types</source><target>Alle Typen</target></trans-unit>
+            <trans-unit id="download.language"><source>Language</source><target>Sprache</target></trans-unit>
+            <trans-unit id="download.allLanguages"><source>All languages</source><target>Alle Sprachen</target></trans-unit>
+            <trans-unit id="download.submit"><source>Filter</source><target>Filtern</target></trans-unit>
+            <trans-unit id="download.reset"><source>Reset</source><target>Zurücksetzen</target></trans-unit>
+            <trans-unit id="download.noResults"><source>No downloads found.</source><target>Keine Downloads gefunden.</target></trans-unit>
+            <trans-unit id="download.download"><source>Download</source><target>Herunterladen</target></trans-unit>
+            <trans-unit id="download.col.title"><source>Title</source><target>Titel</target></trans-unit>
+            <trans-unit id="download.col.type"><source>Type</source><target>Typ</target></trans-unit>
+            <trans-unit id="download.col.language"><source>Language</source><target>Sprache</target></trans-unit>
+            <trans-unit id="download.col.version"><source>Version</source><target>Version</target></trans-unit>
+            <trans-unit id="download.col.valid"><source>Validity</source><target>Gültigkeit</target></trans-unit>
+        </body>
+    </file>
+</xliff>

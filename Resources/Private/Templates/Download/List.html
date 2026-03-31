@@ -44,7 +44,18 @@
                             <td>{dl.language}</td>
                             <td>{dl.version}</td>
                             <td><f:if condition="{dl.validFrom}"><f:format.date format="d.m.Y">{dl.validFrom}</f:format.date></f:if><f:if condition="{dl.validUntil}"> — <f:format.date format="d.m.Y">{dl.validUntil}</f:format.date></f:if></td>
-                            <td><f:if condition="{dl.file}"><a href="{f:uri.resource(path: 'fileadmin/')}" download=""><f:translate key="LLL:EXT:dv_education_downloads/Resources/Private/Language/locallang.xlf:download.download" /></a></f:if></td>
+                            <td>
+                                <f:if condition="{dl.file}">
+                                    <f:then>
+                                        <a href="{dl.file.originalResource.publicUrl}" download="" class="download-link">
+                                            <f:translate key="LLL:EXT:dv_education_downloads/Resources/Private/Language/locallang.xlf:download.download" />
+                                        </a>
+                                    </f:then>
+                                    <f:else>
+                                        <span class="download-no-file"><f:translate key="LLL:EXT:dv_education_downloads/Resources/Private/Language/locallang.xlf:download.noFile" /></span>
+                                    </f:else>
+                                </f:if>
+                            </td>
                         </tr>
                     </f:for>
                 </tbody>

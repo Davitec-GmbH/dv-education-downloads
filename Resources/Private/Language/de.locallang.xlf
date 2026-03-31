@@ -18,6 +18,7 @@
             <trans-unit id="download.col.language"><source>Language</source><target>Sprache</target></trans-unit>
             <trans-unit id="download.col.version"><source>Version</source><target>Version</target></trans-unit>
             <trans-unit id="download.col.valid"><source>Validity</source><target>Gültigkeit</target></trans-unit>
+            <trans-unit id="download.noFile"><source>No file attached</source><target>Keine Datei hinterlegt</target></trans-unit>
         </body>
     </file>
 </xliff>

@@ -1,0 +1,6 @@
+"uid","pid","title","description","document_type","language","version","sorting","deleted","hidden"
+1,1,"Immatrikulationsantrag","Antrag auf Einschreibung",1,"de","WS 26/27",1,0,0
+2,1,"Enrolment Application","Application form",1,"en","WS 26/27",2,0,0
+3,1,"Studienordnung","Allgemeine SPO",2,"de","4.0",3,0,0
+4,1,"VPN-Anleitung","Setup VPN",1,"de","2.1",4,0,0
+5,1,"Gelöscht","Sollte nicht erscheinen",1,"de","1.0",5,1,0

@@ -1,0 +1,2 @@
+.. |extension_key| replace:: dv_education_downloads
+.. |extension_name| replace:: Education Downloads

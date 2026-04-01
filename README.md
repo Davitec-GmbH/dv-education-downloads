@@ -21,3 +21,5 @@ composer require davitec/dv-education-downloads
 ## License
 
 GPL-2.0-or-later
+
+Version 1.0.2

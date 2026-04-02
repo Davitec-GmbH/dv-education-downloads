@@ -3,7 +3,12 @@
     "type": "typo3-cms-extension",
     "description": "Download center for the education sector. Document management with type, language, version, validity period, and filtering.",
     "license": "GPL-2.0-or-later",
-    "authors": [{"name": "Davitec GmbH, +Pluswerk Standort Dresden", "email": "devops@davitec.de"}],
+    "authors": [
+        {
+            "name": "Davitec GmbH, +Pluswerk Standort Dresden",
+            "email": "devops@davitec.de"
+        }
+    ],
     "require": {
         "php": "^8.2",
         "typo3/cms-core": "^12.4 || ^13.4",
@@ -15,9 +20,16 @@
         "typo3/testing-framework": "^8.0 || ^9.0"
     },
     "autoload": {
-        "psr-4": {"Davitec\\DvEducationDownloads\\": "Classes/"}
+        "psr-4": {
+            "Davitec\\DvEducationDownloads\\": "Classes/"
+        }
     },
     "extra": {
-        "typo3/cms": {"extension-key": "dv_education_downloads"}
+        "typo3/cms": {
+            "extension-key": "dv_education_downloads"
+        }
+    },
+    "support": {
+        "docs": "https://docs.typo3.org/p/davitec/dv-education-downloads/main/en-us/Index.html"
     }
 }
